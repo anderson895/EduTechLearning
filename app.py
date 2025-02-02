@@ -11,9 +11,9 @@ def landing():
 
 
 
-@app.route('/subject1')
-def subject1():
-    return render_template('subject1.html')
+@app.route('/lesson1')
+def lesson1():
+    return render_template('lesson1.html')
 
 
 
