@@ -7,7 +7,7 @@
 
 
 <!-- jQuery CDN -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJ+3hFQq5+4Ohqmr8rGPK+P3K5YJ27Gq3pF5E="crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- SweetAlert2 CDN -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -17,10 +17,7 @@
 
 
 <script>
-  
-  
-  const overlay = document.getElementById('overlay');
-
+const overlay = document.getElementById('overlay');
 
   menuButton.addEventListener('click', () => {
     sidebar.classList.toggle('-translate-x-full');
@@ -28,46 +25,15 @@
   });
 
 
-
   overlay.addEventListener('click', () => {
     sidebar.classList.add('-translate-x-full');
     overlay.classList.add('hidden');
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 </script>
 
 
-<script>
-  // Hanapin lahat ng anchor tags sa sidebar
-  document.querySelectorAll('aside nav a').forEach(link => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault(); // Pigilan ang default na pag-reload
 
-      // Gawin ang gusto mong behavior dito (e.g., mag-load ng content via AJAX)
-      console.log('Clicked link:', this.href);
 
-      // Optionally: i-update ang content dynamically
-      document.querySelector('main').innerHTML = `<p>Loading content from: ${this.href}</p>`;
-    });
-  });
-</script>
 
 </body>
 </html>
