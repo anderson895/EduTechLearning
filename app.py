@@ -11,6 +11,12 @@ def landing():
 
 
 
+@app.route('/subject1')
+def subject1():
+    return render_template('subject1.html')
+
+
+
 # if __name__ == '__main__':
 #     app.run(port=5001, debug=True)
 if __name__ == "__main__":
