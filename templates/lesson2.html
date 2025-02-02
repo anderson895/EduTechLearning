@@ -1,0 +1,49 @@
+{% include 'components/header.html' %}
+
+<div
+  class="bg-gradient-to-r from-red-500 to-red-700 text-white py-12 px-6 flex items-center justify-center relative"
+  style="background-image: url('/static/Images/Background.jpg');"
+>
+  <!-- Overlay with black opacity -->
+  <div class="absolute inset-0 bg-yellow-500 bg-opacity-50"></div>
+
+  <div class="text-center relative z-10">
+    <h1 class="text-5xl font-bold mb-2">Lesson 2</h1>
+    <p class="text-lg font-medium">Daily Check-Ins & Weekly Assignments</p>
+  </div>
+</div>
+
+
+<div class="max-w-3xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="p-8">
+        <h1 class="text-3xl font-bold text-blue-600">Week 1: September 3 - September 8</h1>
+        <p class="mt-4 text-lg font-medium text-gray-700">
+            Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.
+        </p>
+        <p class="mt-4 text-gray-600">
+            Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that's current and interesting...
+        </p>
+    </div>
+    <img class="w-full h-auto object-cover" src="/static/Images/sample1.jpg" alt="A sample blog-related visual" />
+    <div class="p-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Design with Ease</h2>
+        <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
+            “Do you have a design in mind for your blog? Whether you prefer a trendy postcard look or a more editorial style blog - there’s a stunning layout for everyone.”
+        </blockquote>
+        <p class="mt-4 text-gray-600">
+            Every layout comes with the latest social features built in...
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Create Relevant Content</h2>
+        <p class="text-gray-600">
+            You’ll be posting loads of engaging content, so be sure to keep your blog organized...
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Stun Your Readers</h2>
+        <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
+            “Be original, show off your style, and tell your story.”
+        </blockquote>
+    </div>
+</div>
+
+{% include 'components/footer.html' %}
