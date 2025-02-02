@@ -1,49 +1,66 @@
 {% include 'components/header.html' %}
 
-<div
-  class="bg-gradient-to-r from-red-500 to-red-700 text-white py-12 px-6 flex items-center justify-center relative"
-  style="background-image: url('/static/Images/Background.jpg');"
->
-  <!-- Overlay with black opacity -->
-  <div class="absolute inset-0 bg-yellow-500 bg-opacity-50"></div>
-
-  <div class="text-center relative z-10">
-    <h1 class="text-5xl font-bold mb-2">Lesson 4</h1>
-    <p class="text-lg font-medium">Daily Check-Ins & Weekly Assignments</p>
-  </div>
-</div>
-
-
-<div class="max-w-3xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
-    <div class="p-8">
-        <h1 class="text-3xl font-bold text-blue-600">Week 1: September 3 - September 8</h1>
-        <p class="mt-4 text-lg font-medium text-gray-700">
-            Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.
-        </p>
-        <p class="mt-4 text-gray-600">
-            Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that's current and interesting...
-        </p>
+ <!-- Header Section -->
+ <header class="bg-gradient-to-r from-green-500 to-blue-500 text-white py-8">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold">LESSON 4 :Life Cycles and Traits</h1>
+        <p class="mt-2 text-lg">Exploring the interconnected changes in organisms and the environment</p>
     </div>
-    <img class="w-full h-auto object-cover" src="/static/Images/sample1.jpg" alt="A sample blog-related visual" />
-    <div class="p-8">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Design with Ease</h2>
-        <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
-            “Do you have a design in mind for your blog? Whether you prefer a trendy postcard look or a more editorial style blog - there’s a stunning layout for everyone.”
-        </blockquote>
-        <p class="mt-4 text-gray-600">
-            Every layout comes with the latest social features built in...
-        </p>
+</header>
 
-        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Create Relevant Content</h2>
-        <p class="text-gray-600">
-            You’ll be posting loads of engaging content, so be sure to keep your blog organized...
-        </p>
+<!-- Main Content Section -->
+<main class="container mx-auto py-10 px-4">
+    <!-- Life Cycles Section -->
+    <section class="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-green-600">Life Cycles</h2>
+            <p class="mt-4 text-gray-700">
+                A life cycle is the sequence of biological changes that occurs as an organism develops from an egg into an adult until its death. Many species synchronize their life cycles with environmental changes, such as the seasons, to enhance survival.
+            </p>
+            <ul class="list-disc list-inside mt-4 text-gray-700">
+                <li>Example: Many butterfly life cycles align with the flowering times of plants.</li>
+                <li>Environmental triggers, such as temperature, impact the transitions between stages.</li>
+                <li>Disruptions in these transitions can affect ecosystems, such as mismatched pollination timing.</li>
+            </ul>
+        </div>
+        <img class="w-full object-cover h-64" src="/static/Images/sample1.jpg" alt="Life cycle of a bee">
+    </section>
 
-        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Stun Your Readers</h2>
-        <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
-            “Be original, show off your style, and tell your story.”
-        </blockquote>
-    </div>
-</div>
+    <!-- Traits Section -->
+    <section class="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-blue-600">Traits</h2>
+            <p class="mt-4 text-gray-700">
+                Traits are the characteristics of an organism, including its appearance and functions. Traits can be morphological, physiological, or behavioral, and are shaped by interactions with the environment.
+            </p>
+            <ul class="list-disc list-inside mt-4 text-gray-700">
+                <li>Traits are inherited through genetic material (DNA).</li>
+                <li>They play a key role in interactions with other organisms and survival in changing environments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Environmental Changes Section -->
+    <section class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-yellow-600">Environmental Changes</h2>
+            <p class="mt-4 text-gray-700">
+                Life cycles and traits are influenced by various Earth processes and environmental factors, such as:
+            </p>
+            <ul class="list-disc list-inside mt-4 text-gray-700">
+                <li>Evolutionary processes affecting populations over generations.</li>
+                <li>Species interactions for food, shelter, and competition.</li>
+                <li>Climatic conditions like sunlight, temperature, and precipitation.</li>
+            </ul>
+        </div>
+        <img class="w-full object-cover h-64" src="/static/Images/sample2.jpg" alt="Change in First Bloom Date">
+        <div class="p-6">
+            <p class="text-gray-700">
+                The map illustrates changes in the first bloom date between 1951-1960 and 2006-2015, reflecting shifts in climate and environmental conditions.
+            </p>
+        </div>
+    </section>
+</main>
+
 
 {% include 'components/footer.html' %}
