@@ -1,0 +1,38 @@
+ <!-- Main Content goes here -->
+</main>
+</div>
+
+<!-- Optional: Material Icons CDN for icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJ+3hFQq5+4Ohqmr8rGPK+P3K5YJ27Gq3pF5E="crossorigin="anonymous"></script>
+
+<!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+
+<script>
+  
+  
+  const overlay = document.getElementById('overlay');
+
+
+  menuButton.addEventListener('click', () => {
+    sidebar.classList.toggle('-translate-x-full');
+    overlay.classList.toggle('hidden');
+  });
+
+
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.add('-translate-x-full');
+    overlay.classList.add('hidden');
+  });
+</script>
+</body>
+</html>
